@@ -1,0 +1,122 @@
+body { /* Estilo para el cuerpo de la página */
+    font-family: Arial, sans-serif; /* Establece la fuente del texto como Arial, con una fuente sans-serif alternativa */
+    margin: 0; /* Elimina los márgenes por defecto del navegador */
+    padding: 0; /* Elimina el padding por defecto del navegador */
+    display: flex; /* Usa flexbox para el diseño */
+    flex-direction: column; /* Organiza los elementos hijos en una columna */
+    min-height: 100vh; /* Establece la altura mínima del cuerpo como el 100% de la altura de la ventana del navegador */
+}
+
+header { /* Estilo para el encabezado de la página */
+    background-color: #333; /* Establece el color de fondo del encabezado como un gris oscuro */
+    color: white; /* Establece el color del texto del encabezado como blanco */
+    padding: 10px; /* Agrega un padding de 10px en todas las direcciones */
+    text-align: center; /* Centra el texto en el encabezado */
+}
+
+header img { /* Estilo para la imagen del encabezado */
+    max-width: 150px; /* Establece el ancho máximo de la imagen a 150 píxeles */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+    margin-bottom: 10px; /* Agrega un margen inferior de 10px */
+}
+
+header h1 { /* Estilo para el título principal en el encabezado */
+    margin: 10px 0; /* Agrega un margen de 10px arriba y abajo, y 0 a los lados */
+}
+
+nav ul { /* Estilo para la lista de navegación */
+    list-style-type: none; /* Elimina los puntos de la lista */
+    margin: 0; /* Elimina el margen por defecto de la lista */
+    padding: 0; /* Elimina el padding por defecto de la lista */
+    display: flex; /* Usa flexbox para alinear los elementos de la lista */
+    justify-content: center; /* Centra los elementos de la lista horizontalmente */
+    background-color: #444; /* Establece el color de fondo de la lista como un gris más claro */
+}
+
+nav ul li { /* Estilo para los elementos de la lista de navegación */
+    margin: 0 15px; /* Establece un margen horizontal de 15px entre los elementos de la lista */
+}
+
+nav ul li a { /* Estilo para los enlaces dentro de los elementos de la lista */
+    color: white; /* Establece el color del texto del enlace como blanco */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    padding: 10px 15px; /* Agrega un padding de 10px arriba y abajo, y 15px a los lados */
+    display: block; /* Convierte el enlace en un bloque para que ocupe todo el espacio del elemento padre */
+}
+
+nav ul li a:hover { /* Estilo para el estado hover de los enlaces en la lista */
+    background-color: #555; /* Cambia el color de fondo a un gris más claro al pasar el cursor */
+}
+
+main { /* Estilo para la sección principal de la página */
+    flex: 1; /* Permite que la sección principal se expanda para ocupar el espacio restante */
+    padding: 20px; /* Agrega un padding de 20px en todas las direcciones */
+    background-color: #f4f4f4; /* Establece el color de fondo de la sección principal como un gris claro */
+}
+
+.contact-section { /* Estilo para la sección de contacto */
+    display: flex; /* Usa flexbox para alinear los elementos en la sección */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    gap: 30px; /* Establece un espacio de 30px entre los elementos de la sección */
+}
+
+.form-container, .map-container { /* Estilo para los contenedores del formulario y el mapa */
+    background-color: white; /* Establece el color de fondo como blanco */
+    padding: 20px; /* Agrega un padding de 20px en todas las direcciones */
+    border-radius: 8px; /* Agrega esquinas redondeadas al contenedor */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agrega una sombra sutil alrededor del contenedor */
+    max-width: 500px; /* Establece un ancho máximo de 500 píxeles para los contenedores */
+    width: 100%; /* Establece el ancho al 100% del contenedor padre */
+}
+
+form label { /* Estilo para las etiquetas del formulario */
+    display: block; /* Hace que la etiqueta ocupe toda la línea */
+    margin-top: 10px; /* Agrega un margen superior de 10px */
+    font-weight: bold; /* Establece el peso de la fuente como negrita */
+}
+
+form input, form textarea { /* Estilo para los campos de entrada y las áreas de texto del formulario */
+    width: 100%; /* Establece el ancho al 100% del contenedor */
+    padding: 8px; /* Agrega un padding de 8px en todas las direcciones */
+    margin-top: 5px; /* Agrega un margen superior de 5px */
+    border: 1px solid #ccc; /* Establece un borde gris claro alrededor de los campos */
+    border-radius: 5px; /* Agrega esquinas redondeadas a los campos */
+}
+
+form input.btn { /* Estilo para el botón de envío del formulario */
+    margin-top: 20px; /* Agrega un margen superior de 20px */
+    background-color: #333; /* Establece el color de fondo del botón como gris oscuro */
+    color: white; /* Establece el color del texto del botón como blanco */
+    border: none; /* Elimina el borde del botón */
+    padding: 10px; /* Agrega un padding de 10px en todas las direcciones */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+    width: 100%; /* Establece el ancho al 100% del contenedor */
+}
+
+form input.btn:hover { /* Estilo para el estado hover del botón de envío */
+    background-color: #555; /* Cambia el color de fondo a un gris más claro al pasar el cursor */
+}
+
+.form-text { /* Estilo para el contenedor de texto del formulario */
+    margin-top: 10px; /* Agrega un margen superior de 10px */
+    display: flex; /* Usa flexbox para alinear los elementos dentro del contenedor */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos del contenedor */
+}
+
+.form-text a { /* Estilo para los enlaces dentro del contenedor de texto del formulario */
+    color: #333; /* Establece el color del texto como un gris oscuro */
+    text-decoration: none; /* Elimina el subrayado del texto del enlace */
+}
+
+.map-container iframe { /* Estilo para el iframe del mapa dentro del contenedor de mapa */
+    width: 100%; /* Establece el ancho al 100% del contenedor */
+    border-radius: 8px; /* Agrega esquinas redondeadas al iframe */
+}
+
+footer { /* Estilo para el pie de página */
+    background-color: #333; /* Establece el color de fondo del pie de página como gris oscuro */
+    color: white; /* Establece el color del texto del pie de página como blanco */
+    text-align: center; /* Centra el texto en el pie de página */
+    padding: 10px; /* Agrega un padding de 10px en todas las direcciones */
+}
